@@ -7,7 +7,7 @@ int solution(vector<int> years)
 
 for(int i = 1; i < years.size(); i++){
 
-    if(years[i-1] < years[1]){
+    if(years[i-1] < years[i]){
         timeneeded += 1;
     }else if (years[i-1] > years[i]){
         timeneeded += 2;
